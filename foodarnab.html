@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Oleo+Script&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@700&family=Permanent+Marker&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Satisfy&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Oleo+Script:wght@700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Courgette&family=Dancing+Script:wght@700&family=Lobster&family=Oleo+Script:wght@700&family=Satisfy&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        /* Head section  */
+        #head {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: inherit;
+            /* border: 2px solid red; */
+            width: 100vw;
+        }
+
+        #head img {
+            height: 80px;
+            width: 100px;
+            margin: 5px;
+        }
+
+        #head ul li {
+            list-style: none;
+            margin-top: 30px;
+            margin-left: 10px;
+        }
+
+        #head ul li a {
+            text-decoration: none;
+            margin: 10px;
+            font-size: 22px;
+            padding: 5px;
+            font-weight: 600;
+            color: black;
+            font-family: 'Lobster', cursive;
+            transition: all 1s ease-in-out;
+        }
+
+        #head ul li a:hover,
+        #head ul li a:active {
+            background-color: black;
+            color: white;
+            border-radius: 8px;
+        }
+
+        /* Home section  */
+        #home {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            /* border: 2px solid black; */
+            height: 600px;
+            width: 100vw;
+            background: url('https://cdn.pixabay.com/photo/2018/09/19/12/47/fish-curry-3688482_960_720.jpg') no-repeat center center/cover;
+            animation: animone 6s ease-in-out 3s infinite;
+        }
+
+        @keyframes animone {
+            0% {
+                background: url('https://cdn.pixabay.com/photo/2018/09/19/12/47/fish-curry-3688482_960_720.jpg') no-repeat center center/cover;
+            }
+
+            25% {
+                background: url('https://cdn.pixabay.com/photo/2016/11/29/02/30/breakfast-1866869_960_720.jpg') no-repeat center center/cover;
+            }
+
+            50% {
+                background: url('https://cdn.pixabay.com/photo/2013/06/13/14/17/shrimp-139165_960_720.jpg') no-repeat center center/cover;
+            }
+
+            75% {
+                background: url('https://cdn.pixabay.com/photo/2018/12/04/16/50/gulab-jamun-3856052_960_720.jpg') no-repeat center center/cover;
+            }
+
+            100% {
+                background: url('https://cdn.pixabay.com/photo/2014/01/17/09/07/teriyaki-246826_960_720.jpg') no-repeat center center/cover;
+            }
+        }
+
+        #home #homecontent {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            /* border: 2px solid black; */
+            height: 350px;
+            width: 850px;
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.5);
+            border-top-left-radius: 24px;
+            border-bottom-right-radius: 24px;
+            color: black;
+            padding: 20px;
+        }
+
+        #home #homecontent h1 {
+            font-size: 3.4rem;
+            font-family: 'Lobster', cursive;
+            color: rgb(80, 2, 80);
+            text-align: center;
+        }
+
+        #home #homecontent h2 {
+            font-size: 2.6rem;
+            font-family: 'Lobster', cursive;
+            text-align: center;
+        }
+
+        #home #homecontent p {
+            font-size: 25px;
+            font-family: 'Dancing Script', cursive;
+            text-align: center;
+        }
+
+        /* Body  */
+        #body {
+            display: flex;
+            flex-direction: column;
+            align-items: inherit;
+            flex-wrap: wrap;
+            width: 100vw;
+        }
+
+        #body h1 {
+            text-align: center;
+            font-size: 2.6rem;
+            font-family: 'Lobster', cursive;
+            margin: 10px 0px;
+        }
+
+        #body .contents {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-items: inherit;
+            padding: 10px;
+            background-color: rgba(168, 23, 47, 0.911);
+            width: 100vw;
+            color: white;
+        }
+
+        #body .contents .contentclass-1 {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-items: inherit;
+        }
+
+        #body .contents .contentclass-1 h2 {
+            font-size: 2.1rem;
+            font-weight: bolder;
+            font-family: 'Grenze Gotisch', cursive;
+        }
+
+
+
+        #body .contents .contentclass-1 .intro {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: inherit;
+            margin: 10px 0px;
+            width: 80vw;
+        }
+
+        #body .contents .contentclass-1 .intro h2 {
+            font-size: 2.1rem;
+        }
+
+        #body .contents .contentclass-1 .intro #profilepic {
+            height: 100px;
+            width: 100px;
+            margin-right: 5px;
+            border-radius: 10px;
+            transition: all 1s ease-in-out;
+            cursor: pointer;
+        }
+
+        #body .contents .contentclass-1 .intro #profilepic:hover,
+        #body .contents .contentclass-1 .intro #profilepic:active {
+            transform: scale(2);
+        }
+
+        #body .contents .contentclass-1 p {
+            margin: 10px 0px;
+            font-size: 20px;
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        #body .contents .contentclass-1 img {
+            margin: 10px 0px;
+            height: 450px;
+            width: 450px;
+            border-radius: 10px;
+            transition: all 1s ease-in-out;
+            cursor: pointer;
+        }
+
+        #body .contents .contentclass-1 img:active,
+        #body .contents .contentclass-1 img:hover {
+            transform: scale(1.2);
+        }
+        #body .contents .contentclass-1 .contacts {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-items: inherit;
+            margin-bottom: 30px;
+        }
+
+        #body .contents .contentclass-1 .contacts h2 {
+            margin-bottom: 10px;
+        }
+
+        #body .contents .contentclass-1 .contacts div {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: inherit;
+            justify-content: space-between;
+            width: 350px;
+        }
+
+        #body .contents .contentclass-1 .contacts div a img {
+            height: 50px;
+            width: 50px;
+            transition: all 1s ease-in-out;
+        }
+
+        #body .contents .contentclass-1 .contacts div a img:hover,
+        #body .contents .contentclass-1 .contacts div a img:active {
+            transform: scale(2);
+        }
+
+        /* Footer  */
+        footer {
+            display: flex;
+            flex-direction: column;
+            align-items: inherit;
+            flex-wrap: wrap;
+            padding: 20px;
+            background: rgba(17, 17, 17, 0.884);
+            color: white;
+            font-family: 'Satisfy', cursive;
+            width: 100vw;
+        }
+
+        footer #logoad {
+            height: 80px;
+            width: 80px;
+            margin-bottom: 30px;
+        }
+
+        footer #about {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-items: inherit;
+            margin-bottom: 30px;
+        }
+
+        footer #about h2 {
+            margin-bottom: 10px;
+        }
+
+        footer #about p {
+            font-size: 17px;
+        }
+
+        footer #contact {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-items: inherit;
+            margin-bottom: 30px;
+        }
+
+        footer #contact h2 {
+            margin-bottom: 10px;
+        }
+
+        footer #contact div {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: inherit;
+            justify-content: space-between;
+            width: 350px;
+        }
+
+        footer #contact div a img {
+            height: 50px;
+            width: 50px;
+            transition: all 1s ease-in-out;
+        }
+
+        footer #contact div a img:hover,
+        footer #contact div a img:active {
+            transform: scale(2);
+        }
+
+        #copy {
+            font-size: 17px;
+        }
+
+        /* responsive  */
+        @media only screen and (max-width: 853px) {
+            #head {
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+            }
+
+            #head ul li {
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+
+            #head ul li a {
+                font-size: 14px;
+            }
+
+            #head img {
+                height: 75px;
+                width: 80px;
+            }
+
+            #home {
+                height: 510px;
+                padding: 20px;
+            }
+
+            #home #homecontent {
+                height: auto;
+                width: 500px;
+            }
+
+            #home #homecontent h1 {
+                font-size: 26px;
+                margin-bottom: 10px;
+            }
+
+            #home #homecontent h2 {
+                font-size: 24px;
+                margin-bottom: 10px;
+            }
+
+            #home #homecontent p {
+                font-size: 14px;
+            }
+
+            #body h1 {
+                font-size: 26px;
+            }
+
+            #body .contents .contentclass-1 h2 {
+                font-size: 24px;
+            }
+
+            #body .contents .contentclass-1 .intro h2 {
+                font-size: 22px;
+            }
+
+            #body .contents .contentclass-1 p {
+                font-size: 13px;
+            }
+
+            #body .contents .contentclass-1 .contacts {
+                margin-bottom: 15px;
+            }
+
+            #body .contents .contentclass-1 .contacts h2 {
+                margin-bottom: 7px;
+                font-size: 20px;
+            }
+
+            #body .contents .contentclass-1 .contacts div a img {
+                height: 35px;
+                width: 35px;
+            }
+
+            #body .contents .contentclass-1 .contacts div {
+                width: 100px;
+            }
+
+            #body .contents .contentclass-1 .contacts {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                align-items: inherit;
+                margin-bottom: 15px;
+            }
+
+            footer {
+                padding: 10px;
+            }
+
+            footer #logoad {
+                height: 70px;
+                width: 70px;
+                margin-bottom: 15px;
+            }
+
+            footer #about {
+                margin-bottom: 15px;
+            }
+
+            footer #about h2 {
+                margin-bottom: 5px;
+                font-size: 20px;
+            }
+
+            footer #about p {
+                font-size: 14px;
+            }
+
+            footer #contact {
+                margin-bottom: 15px;
+            }
+
+            footer #contact h2 {
+                margin-bottom: 7px;
+                font-size: 20px;
+            }
+
+            footer #contact div a img {
+                height: 35px;
+                width: 35px;
+            }
+
+            footer #contact {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                align-items: inherit;
+                margin-bottom: 15px;
+            }
+
+            footer #contact div {
+                width: 100px;
+            }
+
+            #copy {
+                font-size: 14px;
+            }
+
+            #body .contents .contentclass-1 img {
+                height: 150px;
+                width: 150px;
+            }
+            #body .contents .contentclass-1 .intro #profilepic {
+                height: 60px;
+                width: 60px;
+            }
+        }
+
+        @media only screen and (max-width: 260px) {
+            #body .contents .contentclass-1 h2 {
+                font-size: 20px;
+            }
+
+            #body .contents .contentclass-1 .intro h2 {
+                font-size: 19px;
+            }
+
+            #body .contents .contentclass-1 p {
+                font-size: 10px;
+            }
+
+            #body .contents {
+                padding: 5px;
+            }
+
+            #head ul li a {
+                font-size: 13px;
+            }
+
+            #home #homecontent h1 {
+                font-size: 24px;
+            }
+
+            #home #homecontent h2 {
+                font-size: 22px;
+            }
+
+            #home #homecontent p {
+                font-size: 13px;
+            }
+
+            #body h1 {
+                font-size: 24px;
+            }
+
+            footer #logoad {
+                height: 60px;
+                width: 60px;
+            }
+
+            footer #about h2 {
+                font-size: 17px;
+            }
+
+            footer #about p {
+                font-size: 12px;
+            }
+
+            footer #contact h2 {
+                font-size: 17px;
+            }
+
+            #copy {
+                font-size: 13px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <body>
+        <div id="head">
+            <img src="logo.png" alt="">
+            <ul>
+                <li>
+                    <a href="#home">Home</a>
+                    <a href="#body">Blogs</a>
+                    <a href="#contact">Contact Us</a>
+                    <a href="food.html">Go back</a>
+                </li>
+            </ul>
+        </div>
+        <div id="home">
+            <div id="homecontent">
+                <h1>Welcome to Arnab's Food blog</h1>
+                <h2>This is another heading</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam ipsum suscipit ipsa minima
+                    veritatis
+                    ut expedita iusto. Incidunt, voluptatibus repellendus!</p>
+            </div>
+        </div>
+        <div id="body">
+            <h1>Food blogs</h1>
+            <div class="contents" id="content-1">
+                <div class="contentclass-1">
+                    <h2>Best Biriyani in Kolkata</h2>
+                    <div class="intro">
+                        <img id="profilepic" src="arnabpro.jpeg" alt="">
+                        <h2>By Arnab Roy</h2>
+                    </div>
+                    <p> <b>OUDH 1590-:PRICE-:395/plate(approx)</b> Specialsed in Awadhi Biriyanis,Oudh makes one of the
+                        best Biriyanis in Kolkata,They have a great ambience in their outlets and justifying their name
+                        they try to give their customers the old era feelings.They are also specialized in kebabs and
+                        other mughlai dishes.You can experience Oudh Biriyani in their branches in Salt Lake.Lake Town.
+                        <br>
+                        Address 1-:Street number 68,CD block sector-1 Bidhannagar,Kolkata-:700064 <br>
+                        Address 2-:Singhs,deshapriya park W,Kalighat,manoharpukur,Kolkata:700026. <br>
+                        Address 3-:P-562 Hemanta mukherjee Sarani,Kolkata-:700029
+                    </p>
+                    <img src="oudh.jpeg" alt="">
+                    <p> <b>ARSALAN PARKCIRCUS-:PRICE-:350/plate:</b> Arsalan have now opened their branches all over
+                        Kolkata but debatably their best Biriyani can be experienced in their oldest and the first
+                        branch situated in the park circus maidan more.Specialise in Biriyani.People are crazy about
+                        their Biriyani and Firni combo.The ambience in the restaurant is not that good but the Biriyani
+                        is just wesome.They are specialisedin making less oily yet the most delicious Biriyani in
+                        Kolkata. <br>
+                        Address 1-:Park circus 7 point crossing,Kolkata-:700017
+                    </p>
+                    <img src="ars.jpeg" alt="">
+
+                    <p> <b>AMINIA-:PRICE-:PRICE-:350-:</b> Specialised in Biriyani and Chicken Chaap,The most famous
+                        combination among the foodies of Kolkata.Their Biriyani is incomplete without their most famous
+                        Aminia Chicken Chaap.They also make delicious firnis.They have now made many branches but their
+                        oldest branch is in Esplanade.Other branches are in Hatibagan,saltlake,Laketown,nager bazaar
+                        etc. <br>
+                        Address 1-:94,Bidhan Sarani Kolkata-:700004 <br>
+                        Address 2-:166,Jessore road,Satgachi,Kolkata-:700055.
+                    </p>
+                    <img src="amn.jpeg" alt="">
+                    <p><b>Image source-:Tripadvisor</b></p>
+                    <p> <b>DADA BOUDI HOTEL-:PRICE-:320-:</b> Undoubtedly the most rich Biriyani among this lot.Their
+                        Biriyany is full of flavours and high richness.Dada Boudi’s Biriyani is just mouth watering with
+                        best in class teaste and juicy mutton,They are famous for Biriyanis in whole Bengal.Only
+                        drawback is that they have only 2 branches one in Barrackpore and another one in Sodhpur.The
+                        Ambience of their restaurants are not that good but believe me when you will take the first bite
+                        of their Biriyani,you will forget everything and will be lost in the awesome flavor and teaste
+                        of their Biriyani. <br>
+                        Address 1-:1,ghosh para Barrackpore,opposite Barrackpore railway station,Kolkata-:700120 <br>
+                        Address 2-:3,deshbandhunagar Sodhpur,Kolkata-:700115
+                    </p>
+                    <img src="db.jpeg" alt="">
+                    <p> <b>ROYAL INDIAN HOTEL-:PRICE-:350-:</b> The oldest restaurant in Kolkata,Undoubtedly famous for
+                        its Biriyani and Chicken Chaap.They have only one branch that is situated in chitpur.They are
+                        specialized in making light biriyanis and Awesome chicken chhaps.Their biriyani is incomplete
+                        without their Chicken chaaps.They make less oily Biriyani but still manages to make the Biriyani
+                        awesome. <br>
+                        Address 1-:147,Rabindra sarani,Chitpur,Kolkata-:700073
+                    </p>
+                    <img src="royal.jpeg" alt="">
+                    <div class = "contacts">
+                        <h2>Contact Him Here: </h2>
+                        <div>
+                            <a href="#"><img src="https://cdn.pixabay.com/photo/2015/07/13/07/41/icons-842893_960_720.png"
+                                    alt=""></a>
+                            <a href="#"><img
+                                    src="https://cdn.pixabay.com/photo/2016/08/09/17/52/instagram-1581266_960_720.jpg"
+                                    alt=""></a>
+                            <a href="#"><img
+                                    src="https://cdn.pixabay.com/photo/2017/06/22/14/23/twitter-2430933_960_720.png"
+                                    alt=""></a>
+                            <a href="#"><img
+                                    src="https://cdn.pixabay.com/photo/2017/11/17/09/37/businessman-2956974_960_720.jpg"
+                                    alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <footer>
+                <img id="logoad" src="logo.png" alt="">
+                <div id="about">
+                    <h2>About: </h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime eaque numquam voluptates nihil
+                        quisquam
+                        ipsa illo ab quidem. Debitis culpa eum est explicabo iusto expedita, velit ipsum dolorem tenetur
+                        neque
+                        provident rem totam optio saepe aliquam tempora similique numquam quidem voluptatum voluptatibus
+                        nisi ad
+                        nostrum placeat? Adipisci iusto illum possimus voluptatem sit. Unde cumque laboriosam,
+                        perspiciatis
+                        recusandae itaque, alias culpa eos ex, fugit non nisi iste. Doloremque, debitis officiis.
+                        Repellendus
+                        accusamus iure a corporis nobis, non inventore atque iste officia totam! Reprehenderit ex vel
+                        explicabo
+                        voluptatibus est laborum alias impedit necessitatibus quod, doloremque enim quae facilis dicta
+                        id velit
+                        aliquid!</p>
+                </div>
+                <div id="contact">
+                    <h2>Contact Us Here: </h2>
+                    <div>
+                        <a href="#"><img src="https://cdn.pixabay.com/photo/2015/07/13/07/41/icons-842893_960_720.png"
+                                alt=""></a>
+                        <a href="#"><img
+                                src="https://cdn.pixabay.com/photo/2016/08/09/17/52/instagram-1581266_960_720.jpg"
+                                alt=""></a>
+                        <a href="#"><img
+                                src="https://cdn.pixabay.com/photo/2017/06/22/14/23/twitter-2430933_960_720.png"
+                                alt=""></a>
+                        <a href="#"><img
+                                src="https://cdn.pixabay.com/photo/2017/11/17/09/37/businessman-2956974_960_720.jpg"
+                                alt=""></a>
+                    </div>
+                </div>
+                <div id="copy">
+                    Copyrights &copy; | All rights are reserved|2020.
+                </div>
+            </footer>
+    </body>
+
+</html>
